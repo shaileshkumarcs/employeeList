@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+<div class="backgroundImage">
+    <div class="">
+    <h2>Registration Form</h2>
+    <table class="tableclass" style="width: 500px;">
+        <form type="post" id="myForm" action="test.php" onsubmit="return formSubmit()">
+            <tr>
+                <td><label class="lable_name"> Name : </label></td>
+                <td>
+                    <input type="text" id="name" class="inputtext" name="name" autocomplete="off">
+                    <p id="errorname"  class="error-msg"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label class="lable_name"> Email : </label></td>
+                <td>
+                    <input type="text" id="email" class="inputtext" name="eamil">
+                    <p id="erroremail"  class="error-msg"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label class="lable_name"> Password : </label></td>
+                <td>
+                    <input type="password" id="password" class="inputtext" name="password">
+                    <p id="errorpassword"  class="error-msg"></p>
+                </td>
+
+            </tr>
+            <tr>
+                <td><label class="lable_name"> Phone : </label></td>
+                <td>
+                    <input type="text" id="phone" class="inputtext" name="phone">
+                    <p id="errorphone"  class="error-msg"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label class="lable_name"> Select Language : </label></td>
+                <td>
+                    <select name="language" id="language" class="inputtext selectoption">
+                        <option value="">Select Language</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="english">English</option>
+                        <option value="urdu">Urdu</option>
+                        <option value="marathi">Marathi</option>
+                    </select>
+                    <p id="errorlanguage"  class="error-msg"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Register"></td>
+                <td><input type="button" value="Clear" onclick="resetForm();"></td>
+            </tr>
+        </form>
+    </table>
+</div>
+</div>
+</body>
+</html>

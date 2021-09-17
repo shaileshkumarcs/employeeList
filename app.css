@@ -1,0 +1,39 @@
+html, body{
+        height: 100%;
+        margin: 0;
+        color: rgb(255, 255, 255);
+    }
+    .backgroundImage{
+        /*background-image: url("../hellohome.jpeg");*/
+        background-color: #8c8383;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: cover;
+       /* display: flex;
+        align-items: center;
+        justify-content: center;*/
+    }
+    .lable_name{
+        font-size: 20px;
+    }
+    .inputtext{
+        height: 22px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        font-size: 18px;
+        padding: 5px 0px;
+    }
+    .selectoption{
+        height: 32px;
+
+    }
+    p{
+        line-height: 0px;
+    }
+    .error-msg{
+        color: #c03434;
+    }
+    .error-name, .error-email, .error-password, .error-language, .error-phone{
+        border:1px solid red;
+    }
